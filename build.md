@@ -1,25 +1,43 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.99.0.apk  
-Patches: revanced-patches-2.164.0.jar  
+Integrations: revanced-integrations-0.99.25.apk  
+Patches: revanced-patches-2.164.25.jar  
 
-### [2.164.0](https://github.com/revanced/revanced-patches/compare/v2.163.0...v2.164.0) (2023-02-24)
-### Features
-* **photomath:** `unlock-plus` patch ([#1633](https://github.com/revanced/revanced-patches/issues/1633)) ([a673514](https://github.com/revanced/revanced-patches/commit/a673514f848e583513924a6a9b8cfbb56153cc3a))
-* **youtube/general-ads:** hide quick actions in fullscreen ([fff9670](https://github.com/revanced/revanced-patches/commit/fff9670a81108b8343d0b7913953fc6c2bb4a6f0))
-* **youtube/general-ads:** hide related videos in quick action ([d23c31a](https://github.com/revanced/revanced-patches/commit/d23c31a9ec39189e08474044ac5ca06d974add76))
-* **youtube/return-youtube-dislike:** support for shorts ([#1596](https://github.com/revanced/revanced-patches/issues/1596)) ([967c1cb](https://github.com/revanced/revanced-patches/commit/967c1cbd4b340a382a355f13d236d2881bafddbf))
-* **youtube:** remove patch `open-links-directly` ([79291a0](https://github.com/revanced/revanced-patches/commit/79291a0d34bd9514cbef5d97c21c59dfbffad287))
+### YouTube
+- add `enable-timestamps-speed` patch
+- fix: `hide-mix-playlists` patch hiding video description under some videos inotia00/ReVanced_Extended#454
+- fix: `hide-suggested-actions` patch is broken
+- fix: `Hide shorts player subscriptions button` does not work at tablet layout and old layout
+- fix(sponsorblock): when the button container is hidden, skip button is in the wrong place
+- refactor: change some setting default values
+- refactor(default-video-speed): now, default video speed does not apply when playing live video
+- refactor(hide-music-button): apply better patch method
+- refactor(litho): minor optimization
+- refactor(overlay-button): reduced the size of overlay buttons (previously reduced by 20% → now reduced by 30%)
+- refactor(overlay-button/copy-url): now, long pressing the copy link button copies the link with timestamp inotia00/ReVanced_Extended#108
+- refactor(overlay-button/speed): adjust the space spacing of speed dialog
+- refactor(sponsorblock): adjust the space spacing of timestamps
+- crowdin translation update
+`Arabic`, `Chinese Simplified`, `French`, `Italian`, `Japanese`, `Korean`, `Portuguese (Brazilian)`, `Spanish`, `Ukrainian`, `Vietnamese`
 
+### YouTube Music
+- add disable-auto-captions patch inotia00/ReVanced_Extended#328
+- fix: hide-get-premium patch breaks account popup layout in tablet inotia00/ReVanced_Extended#426
+crowdin translation update
+`Spanish`, `Ukrainian`
+
+### ETC
+- add support YouTube v18.09.39
+- code cleanup
+- remove deprecated manifest permission
+
+※ Compatible ReVanced Manager: v0.0.56
+※ courtesy: inotia00
   
 **App Versions:**  
-YouTube: 18.03.36  
-Music (arm64-v8a): 5.39.52  
-Music (arm-v7a): 5.39.52  
-Twitter: 9.71.0-release.0  
-Reddit: 2023.05.0  
-Twitch: 14.6.0  
-TikTok: 27.8.3  
+YouTube: 18.09.39  
+Music (arm64-v8a): 5.47.52  
+Music (arm-v7a): 5.47.52  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
-[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
+[revanced-magisk-module](https://github.com/kazimmt/ReVanced-Builder)  

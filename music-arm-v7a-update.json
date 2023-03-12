@@ -1,6 +1,6 @@
 {
-  "version": "v5.39.52",
-  "versionCode": 20220855,
-  "zipUrl": "https://github.com/j-hc/revanced-magisk-module/releases/download/20220855/music-revanced-magisk-v5.39.52-arm-v7a.zip",
-  "changelog": "https://raw.githubusercontent.com/j-hc/revanced-magisk-module/update/build.md"
+  "version": "v5.47.52",
+  "versionCode": 1,
+  "zipUrl": "https://github.com/kazimmt/ReVanced-Builder/releases/download/1/music-revanced-extended-magisk-v5.47.52-arm-v7a.zip",
+  "changelog": "https://raw.githubusercontent.com/kazimmt/ReVanced-Builder/update/build.md"
 }
