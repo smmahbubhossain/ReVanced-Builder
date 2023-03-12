@@ -1,17 +1,6 @@
 # shellcheck disable=SC2148,SC2086
 ui_print ""
 
-if [ $ARCH = "arm" ]; then
-	#arm
-	ARCH_LIB=armeabi-v7a
-	alias cmpr='$MODPATH/bin/arm/cmpr'
-elif [ $ARCH = "arm64" ]; then
-	#arm64
-	ARCH_LIB=arm64-v8a
-	alias cmpr='$MODPATH/bin/arm64/cmpr'
-else
-	abort "ERROR: unsupported arch: ${ARCH}"
-fi
 set_perm_recursive $MODPATH/bin 0 0 0755 0777
 
 nsenter -t1 -m grep __PKGNAME /proc/mounts | while read -r line; do
@@ -75,8 +64,8 @@ ui_print "* Setting Permissions"
 set_perm $MODPATH/base.apk 1000 1000 644 u:object_r:apk_data_file:s0
 
 ui_print "* Mounting __PKGNAME"
-mkdir $NVBASE/rvhc 2>/dev/null
-RVPATH=$NVBASE/rvhc/__PKGNAME_rv.apk
+mkdir $NVBASE/rvmmt 2>/dev/null
+RVPATH=$NVBASE/rvmmt/__PKGNAME_rv.apk
 mv -f $MODPATH/base.apk $RVPATH
 
 if ! op=$(nsenter -t1 -m mount -o bind $RVPATH $BASEPATH/base.apk 2>&1); then
@@ -91,5 +80,8 @@ ui_print "* Cleanup"
 rm -rf $MODPATH/bin $MODPATH/__PKGNAME.apk
 
 ui_print "* Done"
-ui_print "  by j-hc (github.com/j-hc)"
+ui_print "  by MMT (t.me/ReVanced_MMT)"
+ui_print "  thanks to ReVanced Team"
+ui_print "  thanks to inotia00"
+ui_print "  thanks to J-HC"
 ui_print " "
