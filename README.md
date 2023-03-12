@@ -1,7 +1,7 @@
 #### ⚠️ Do not download modules from 3rd party sources like random websites you found on Google. Only use this repository. I am not responsible for anything they may contain.
 
 # ReVanced Magisk Module
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/ReVanced_MMT)
 [![Build Modules](https://github.com/kazimmt/ReVanced-Builder/actions/workflows/build.yml/badge.svg)](https://github.com/kazimmt/ReVanced-Builder/actions/workflows/build.yml)
 [![CI](https://github.com/kazimmt/ReVanced-Builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/kazimmt/ReVanced-Builder/actions/workflows/ci.yml)
 
