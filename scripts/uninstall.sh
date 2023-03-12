@@ -3,7 +3,7 @@
 	MODDIR=${0%/*}
 	MODULES=${MODDIR%/*}
 	NVBASE=${MODULES%/*}
-	rm $NVBASE/rvhc/__PKGNAME_rv.apk
+	rm $NVBASE/rvmmt/__PKGNAME_rv.apk
 	rmdir $NVBASE/rvhc
 	if __ISBNDL :; then
 		until [ "$(getprop sys.boot_completed)" = 1 ]; do sleep 1; done
