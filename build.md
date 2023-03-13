@@ -35,8 +35,8 @@ crowdin translation update
   
 **App Versions:**  
 YouTube: 18.09.39  
-Music (arm64-v8a): 5.47.52  
-Music (arm-v7a): 5.47.52  
+Music (arm64-v8a): 5.47.53  
+Music (arm-v7a): 5.47.53  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
