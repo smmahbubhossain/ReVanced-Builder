@@ -1,37 +1,33 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.99.25.apk  
-Patches: revanced-patches-2.164.25.jar  
+Integrations: revanced-integrations-0.99.31.apk  
+Patches: revanced-patches-2.164.31.jar  
 
 ### YouTube
-- add `enable-timestamps-speed` patch
-- fix: `hide-mix-playlists` patch hiding video description under some videos inotia00/ReVanced_Extended#454
-- fix: `hide-suggested-actions` patch is broken
-- fix: `Hide shorts player subscriptions button` does not work at tablet layout and old layout
-- fix(sponsorblock): when the button container is hidden, skip button is in the wrong place
-- refactor: change some setting default values
-- refactor(default-video-speed): now, default video speed does not apply when playing live video
-- refactor(hide-music-button): apply better patch method
+
+- add `lift-vertical-video-restriction` patch (Experimental Flags) https://github.com/orgs/revanced/discussions/929
+- add `disable-quic-protocol` patch (Experimental Flags)
+- add `protobuf-spoof` patch (it fixes playback buffer issue https://github.com/inotia00/ReVanced_Extended/issues/141 https://github.com/microg/GmsCore/issues/1870)
+- feat(youtube/general-ads): hide new type of ad
+- fix: `Hide more information menu` setting is broken https://github.com/inotia00/ReVanced_Extended/issues/456
+- fix: `default-video-speed` patch fails in YouTube v18.08.39 https://github.com/inotia00/ReVanced_Extended/issues/470
+- fix: `enable-timestamps-speed` patch is not reflected in patch information
+- fix: reboot dialog is missing in `Default downloader settings`
+- fix(sponsorblock): context broken on [segment submission](https://www.reddit.com/r/revancedextended/comments/11pgnbh/12_im_too_stupid_to_submit_the_issue_on_github_so/)
+- fix(hide-shorts-component): glitch when there are a lot of shorts component blocked in search results
+- refactor(hide-shorts-component): check current PlayerType when blocking shorts player component
 - refactor(litho): minor optimization
-- refactor(overlay-button): reduced the size of overlay buttons (previously reduced by 20% → now reduced by 30%)
-- refactor(overlay-button/copy-url): now, long pressing the copy link button copies the link with timestamp inotia00/ReVanced_Extended#108
-- refactor(overlay-button/speed): adjust the space spacing of speed dialog
-- refactor(sponsorblock): adjust the space spacing of timestamps
+- rollback(default-video-speed): default video speed does not apply when playing live video
 - crowdin translation update
-`Arabic`, `Chinese Simplified`, `French`, `Italian`, `Japanese`, `Korean`, `Portuguese (Brazilian)`, `Spanish`, `Ukrainian`, `Vietnamese`
+`Arabic`, `Bengali`, `Chinese Traditional`, `French`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Portuguese (Brazilian)`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
 
 ### YouTube Music
-- add disable-auto-captions patch inotia00/ReVanced_Extended#328
-- fix: hide-get-premium patch breaks account popup layout in tablet inotia00/ReVanced_Extended#426
-crowdin translation update
-`Spanish`, `Ukrainian`
+- crowdin translation update
+`Indonesian`, `Korean`, `Polish`, `Portuguese (Brazilian)`
 
 ### ETC
-- add support YouTube v18.09.39
-- code cleanup
-- remove deprecated manifest permission
-
+- drop support YouTube v18.09.37
 ※ Compatible ReVanced Manager: v0.0.56
-※ courtesy: inotia00
+※ Thanks to @inotia00
   
 **App Versions:**  
 YouTube: 18.09.39  
